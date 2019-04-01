@@ -8,14 +8,23 @@
 <center>
     <form method="post" action="/">
         <label>
-            <textarea id="CustomInput" placeholder="wpisz swój tekst" rows="10" cols="100"></textarea><br>
+            <textarea id="customInput" placeholder="wpisz swój tekst" rows="10" cols="100"></textarea><br>
             <input type="submit" value="Sprawdź w Java">
+<!--            <span>-->
+<!--                    Ilość liter: <span id="chars">0</span>,<br>-->
+<!--                    Ilość wyrazów: <span id="words">0</span>,<br>-->
+<!--                    Ilość zdań: <span id="questions">0</span>-->
+<!--                </span>-->
         </label>
     </form>
     <table border="5">
         <tr>
             <td width="300">
                 <h1>JavaScript</h1>
+                <div id="charCount">0</div>
+                <div id="wordsCount"></div>
+                <div id="sentencesCount"></div>
+
                 <span>
                     Ilość liter: <span id="chars">0</span>,<br>
                     Ilość wyrazów: <span id="words">0</span>,<br>
@@ -30,6 +39,6 @@
         </tr>
     </table>
 </center>
-<
+<script src="js/counter.js"></script>
 </body>
 </html>
