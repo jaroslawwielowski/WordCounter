@@ -1,3 +1,7 @@
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page isELIgnored="false" %><html>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,11 +23,14 @@
                 <span>
                     Ilość liter: <span id="chars">0</span>,<br>
                     Ilość wyrazów: <span id="words">0</span>,<br>
-                    Ilość zdań: <span id="questions">0</span>
+                    Ilość zdań: <span id="sentences">0</span>
                 </span>
             </td>
             <td width="300">
                 <h1>Java</h1>
+                Ilość liter: ${chars}
+                Ilość wyrazów: ${words}
+                Ilość zdań: ${sentences}
 
             </td>
         </tr>
