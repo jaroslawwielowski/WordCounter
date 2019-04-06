@@ -1,7 +1,7 @@
-<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ page isELIgnored="false" %><html>
+<%--<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>--%>
+<%--<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>--%>
+<%--<%@ page contentType="text/html;charset=UTF-8" language="java" %>--%>
+<%--<%@ page isELIgnored="false" %><html>--%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,12 +10,12 @@
 </head>
 <body>
 <center>
-    <form method="post" action="/">
-        <label>
-            <textarea id="customInput" placeholder="wpisz swój tekst" rows="10" cols="100"></textarea><br>
-            <input type="submit" value="Sprawdź w Java">
-        </label>
-    </form>
+<%--    <form method="post" action="/">--%>
+<%--        <label>--%>
+<%--            <textarea id="customInput" placeholder="wpisz swój tekst" rows="10" cols="100"></textarea><br>--%>
+<%--            <input type="submit" value="Sprawdź w Java">--%>
+<%--        </label>--%>
+<%--    </form>--%>
     <table border="5">
         <tr>
             <td width="300">
@@ -36,6 +36,6 @@
         </tr>
     </table>
 </center>
-<script src="js/counter.js"></script>
+<%--<script src="js/counter.js"></script>--%>
 </body>
 </html>
