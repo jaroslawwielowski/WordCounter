@@ -20,13 +20,13 @@ public class StartController {
     @GetMapping(value = "/")
     public String home1(Model model){
         model.addAttribute(new Counter());
-        return "/WEB-INF/innex";
+        return "index";
     }
 
     @PostMapping(value = "/")
     public  String home2(@ModelAttribute Counter counter, Model model){
         model.addAttribute(new Counter());
-        return "/WEB-INF/innex";
+        return "index";
     }
 
 
