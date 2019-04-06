@@ -18,11 +18,20 @@
 // }
 // window.onload = cha();
 
-var imput = document.querySelector('#customImput'),
-    charCount = document.querySelector('#charCounter');
+// var imput = document.querySelector('#customImput'),
+//     charCount = document.querySelector('#charCounter');
+//
+// var onKeyDown = function () {
+//     charCount.textContent = imput.value.length;
+// };
+//
+// imput.addEventListener("keydown", onKeyDown);
+
+var input = document.querySelector("#customInput"),
+    charCount = document.querySelector("#charCount");
 
 var onKeyDown = function () {
-    charCount.textContent = imput.value.length;
+    charCount.textContent = input.value.length;
 };
 
-imput.addEventListener("keydown", onKeyDown);
+input.addEventListener("keydown", onKeyDown);
