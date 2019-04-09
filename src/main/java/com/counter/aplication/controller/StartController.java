@@ -17,17 +17,21 @@ public class StartController {
     private final CounterService counterService;
 
 
-    @GetMapping(value = "/")
+    @GetMapping(value = "/java")
     public String home1(Model model){
         model.addAttribute(new Counter());
-        return "indexJava";
+        return "indexJava.jsp";
     }
 
-    @PostMapping(value = "/")
+    @PostMapping(value = "/java")
     public  String home2(@ModelAttribute Counter counter, Model model){
         model.addAttribute(new Counter());
-        return "indexJava";
+        return "indexJava.jsp";
     }
 
+    @GetMapping(value = "/javascript")
+    public String home3(){
+        return "indexJavaScript.html";
+    }
 
 }
