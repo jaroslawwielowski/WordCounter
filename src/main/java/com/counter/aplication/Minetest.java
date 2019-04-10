@@ -9,24 +9,25 @@ public class Minetest {
 
 
     public static Map<String, Integer> toSetList(String text){
-        Map<String, Integer> stringIntegerMap = new HashMap<>();
+        Map<String, Integer> stringIntegerMap = new HashMap<String, Integer>();
         String[] words = new String[text.split(" ").length];
         words = text.split(" ");
 
+
         for (int i = 0; i < words.length; i++) {
-            System.out.println(words[i]);
             if (stringIntegerMap.containsKey(words[i])){
-                stringIntegerMap.get()
+                Integer count = stringIntegerMap.get(words[i]);
+                stringIntegerMap.put(words[i], count+1);
+            }else {
+                stringIntegerMap.put(words[i], 1);
             }
         }
-
-
         return stringIntegerMap;
     }
 
     public static void main(String[] args) {
-        String text = " wiele razy chciałe sprawdzić co tam u niej naprawde wiele wiele razy";
+        String text = "wiele razy chciałe sprawdzić co tam u niej naprawdę wiele wiele razy, oh naprawdę naprawdę";
 
-        toSetList(text);
+        System.out.println(toSetList(text));
     }
 }
