@@ -32,9 +32,27 @@ var input = document.querySelector("#customInput"),
 
 var onKeyDown = function () {
     charCount.textContent = input.value.length;
-};
-var wordCound = function(){
 
-}
+};
+
+var input2 = document.querySelector("#customInput"),
+    wordCount = document.querySelector("#wordCount");
+
+
+var wordKeyDown = function(){
+    wordCount.textContent = input2.value.split(" ").length;
+
+};
+
+var input3 = document.querySelector("#customInput"),
+    questionCount = document.querySelector("#questionsCount");
+
+
+var questionKeyDown = function(){
+    questionCount.textContent = input2.value.split(".").length;
+
+};
 
 input.addEventListener("keydown", onKeyDown);
+input2.addEventListener("keydown", wordKeyDown);
+input3.addEventListener("keydown", questionKeyDown)
