@@ -33,5 +33,8 @@ var input = document.querySelector("#customInput"),
 var onKeyDown = function () {
     charCount.textContent = input.value.length;
 };
+var wordCound = function(){
+
+}
 
 input.addEventListener("keydown", onKeyDown);

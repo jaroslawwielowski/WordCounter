@@ -1,19 +1,35 @@
-<!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>JS Bin</title>
+    <meta charset="UTF-8">
+    <title>index</title>
 </head>
 <body>
 <center>
-    <table border="5" >
+    <form method="post" action="/">
+        <label>
+            <textarea id="customInput" placeholder="wpisz swój tekst" rows="10" cols="100"></textarea><br>
+            <input type="submit" value="Sprawdź w Java">
+
+        </label>
+    </form>
+    <table border="5">
         <tr>
-            <td width="200" align="center"><a href="/java"><h1>Java</h1></a></td>
-            <td width="200" align="center"><a href="/javascript"><h1>JavaScript</h1></a></td>
+            <td width="300">
+                <h1>JavaScript</h1>
+                <span>
+                    Ilość liter: <span id="charCount">0</span>,<br>
+                    Ilość wyrazów: <span id="words">0</span>,<br>
+                    Ilość zdań: <span id="questions">0</span>
+                </span>
+            </td>
+            <td width="300">
+                <h1>Java</h1>
+
+
+            </td>
         </tr>
     </table>
-
 </center>
+<script src="js/counter.js"></script>
 </body>
 </html>
